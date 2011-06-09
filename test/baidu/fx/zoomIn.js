@@ -39,33 +39,33 @@ test('test dom', function(){
 	})
 });
 
-// test from
-test('test from', function(){
-	var c, f = 0.5;
-	var img = document.getElementById('img_id');
-	c = baidu.fx.zoomIn('img_div', {
-		from: f,
-		onafterfinish: function(){
-			equals(img.height*f, 128*f, 'from img height = ' + img.height*f); // img height=128px;
-			start();
-		}
-	});
-	stop();
-});
-
-// test to
-test('test to', function(){
-	var c, t = 0.5;
-	var img = document.getElementById('img_id');
-	c = baidu.fx.zoomIn('img_div', {
-		to: t,
-		onafterfinish: function(){
-			equals(img.height*t, 128*t, 'to img height = ' + img.height*t); // img width=128px;start();
-			start();
-		}
-	});
-	stop();
-});
+//// test from
+//test('test from', function(){
+//	var c, f = 0.5;
+//	var img = document.getElementById('img_id');
+//	c = baidu.fx.zoomIn('img_div', {
+//		from: f,
+//		onafterfinish: function(){
+//			equals(img.height*f, 128*f, 'from img height = ' + img.height*f); // img height=128px;
+//			start();
+//		}
+//	});
+//	stop();
+//});
+//
+//// test to
+//test('test to', function(){
+//	var c, t = 0.5;
+//	var img = document.getElementById('img_id');
+//	c = baidu.fx.zoomIn('img_div', {
+//		to: t,
+//		onafterfinish: function(){
+//			equals(img.height*t, 128*t, 'to img height = ' + img.height*t); // img width=128px;start();
+//			start();
+//		}
+//	});
+//	stop();
+//});
 
 // test duraton
 test('test duration', function(){
