@@ -35,7 +35,7 @@
 	</target>
 
 	<target name="execute" depends="init,coverage">
-		<get src="http://${serverip}/${git.user}/${git.project}/test/tools/br/runall.php?ci=true&amp;cov=true" dest="/tmp/${git.user}_${git.project}.php" />
+		<get src="http://${serverip}/addTask?proj=${git.user}.${git.project}" dest="/tmp/${git.user}_${git.project}.php" />
 	</target>
 	<target name="getreport" depends="execute">
 		<waitfor maxwait="600" maxwaitunit="second">
