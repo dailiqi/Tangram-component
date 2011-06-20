@@ -14,7 +14,7 @@
 
 	<property name="report.style.path" value="test/tools/br/reportstyle" />
 	<property name="report.output.path" value="test/tools/br/report/html" />
-	<property name="report.xml" value="test/tools/br/report"/>
+	<property name="report.xml" value="test/tools/br"/>
 	<property name="report.mailto" value="tianlili@baidu.com"/>
 	<property name="report.mailcc" value="tianlili@baidu.com"/>
 	<property name="report.mailfrom" value="tianlili@baidu.com"/>
@@ -26,7 +26,7 @@
 		<mkdir dir="${report.output.path}"/>
 		<junitreport todir="${report.output.path}">
 			<fileset dir="${report.xml}">
-				<include name="*.xml" />
+				<include name="report.xml" />
 			</fileset>
 			<!-- brief report for mail message -->
 			<report format="noframes" styledir="${report.style.path}" todir="${report.output.path}" />
