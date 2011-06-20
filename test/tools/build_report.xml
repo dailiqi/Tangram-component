@@ -7,7 +7,7 @@
                    
      yangbo                                                                
      ====================================================================== -->
-<project name="reportAndMail" basedir="../../">
+<project name="reportAndMail" basedir="../../../">
 	<description>
             for report merge and mail
     </description>
@@ -26,7 +26,7 @@
 		<mkdir dir="${report.output.path}"/>
 		<junitreport todir="${report.output.path}">
 			<fileset dir="${report.xml}">
-				<include name="report.xml" />
+				<include name="*.xml" />
 			</fileset>
 			<!-- brief report for mail message -->
 			<report format="noframes" styledir="${report.style.path}" todir="${report.output.path}" />
