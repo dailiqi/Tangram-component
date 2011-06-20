@@ -862,7 +862,8 @@ var UserAction = {
 		}
 		var param0 = src;
 		var ps = {
-			f : src
+			f : src,
+			time : new Date().getTime()
 		};
 		if (exclude)
 			ps.e = exclude;
