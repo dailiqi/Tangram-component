@@ -55,7 +55,7 @@
 			</waitfor>
 
 			<!-- junit report and mail -->
-			<antcall target="mail" />
+		    <!-- <antcall target="mail" /> -->
 			<!-- junit report and mail end -->
 		</target>
 </project>
